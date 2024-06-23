@@ -1,0 +1,12 @@
+﻿@model List<Country>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="/city/index?countryid=@item.Id">
+                @item.Name
+            </a>
+        </li>
+    }
+</ul>
